@@ -1,0 +1,47 @@
+
+
+
+.skills{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.skill-item{
+    margin: 1rem ;
+    text-align: center;
+}
+
+.item-heading{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.button button{
+    margin: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    border: none;  
+}
+button{
+    padding: 0.5rem 1rem;
+    font-size: 3rem;  
+    font-weight: 500;
+}
+
+button:hover{
+    background-color: #6c757d;
+    color: white;
+}
+
+
+
+
+/* display: "grid",
+        gridTemplateColumns: "1fr 1fr", 
+        gap: "0",
+        padding: "5rem 0",
+        alignItems: "stretch",  */

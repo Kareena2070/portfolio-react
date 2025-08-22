@@ -1,8 +1,11 @@
 
-// import './App.css'
+import './App.css'
+import './component/skills.css'
+  import profile from './assets/profile.jpeg'
   import Navbar from './component/navbar'
   import HeroSection from './component/hero'
-  import profile from './assets/profile.jpeg'
+  import SkillSection from './component/skills'
+ 
 
 function App() {
 
@@ -13,6 +16,7 @@ function App() {
     <HeroSection
     img ={profile}
     />
+    <SkillSection/>
      
     </>
   )
