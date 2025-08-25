@@ -5,6 +5,7 @@ import './component/skills.css'
   import Navbar from './component/navbar'
   import HeroSection from './component/hero'
   import SkillSection from './component/skills'
+  import ProjectSection from './component/project'
  
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     img ={profile}
     />
     <SkillSection/>
+    <ProjectSection/>
      
     </>
   )
