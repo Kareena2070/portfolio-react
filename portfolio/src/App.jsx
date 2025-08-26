@@ -6,6 +6,8 @@ import './component/skills.css'
   import HeroSection from './component/hero'
   import SkillSection from './component/skills'
   import ProjectSection from './component/project'
+  import Experience from './component/experience'
+  import Contact from './component/contact'
  
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
     />
     <SkillSection/>
     <ProjectSection/>
+    <Experience/>
+    <Contact/>
      
     </>
   )
