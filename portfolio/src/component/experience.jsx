@@ -37,7 +37,7 @@ function Experience() {
       ];
 
   return (
-    <section className="container my-5" id="experience" style={{paddingTop: "4rem"}}>
+    <section className="container my-5 pt-5" id="experience"  data-aos="fade-right">
       <h1 className="text-center mb-4">Experience & Achievements</h1>
       <div className="row">
         {achievements.map((item, index) => (
