@@ -1,12 +1,60 @@
-# React + Vite
+🌐 My Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a personal portfolio website built using React + Vite and styled with Bootstrap. It showcases my skills, projects, and contact details in a clean, responsive design.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    Responsive design (works on desktop & mobile)
 
-## Expanding the ESLint configuration
+    Sections: Home, About, Skills, Projects, Contact
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    Projects displayed with images and descriptions
+
+Smooth navigation
+
+🛠️ Tech Stack
+
+    Frontend: React + Vite
+
+    Styling: Bootstrap, CSS
+
+    Deployment: Vercel / Netlify
+
+
+📂 Folder Structure
+portfolio/
+│-- public/          # Static assets
+│-- src/  
+│   │-- components/  # Reusable components (Hero, About, Skills, Projects, Contact)
+│   │-- assets/      # Images & icons
+│   │-- App.jsx      # Main app file
+│   │-- main.jsx     # Entry point
+│-- package.json  
+│-- README.md  
+
+⚡ Getting Started
+1️⃣ Clone this repository
+    git clone https://github.com/Kareena2070/portfolio-react
+    cd portfolio
+
+2️⃣ Install dependencies
+    npm install
+
+3️⃣ Run the app locally
+    npm run dev
+
+4️⃣ Build for production
+    npm run build
+
+
+🌍 Live Demo
+
+👉 kareenayadavprotfolio.netlify.app
+
+🤝 Connect With Me
+
+LinkedIn: https://www.linkedin.com/in/kareena-yadav/
+
+GitHub: https://github.com/Kareena2070
+
+Email: kareenayadav1088@gmail.com
