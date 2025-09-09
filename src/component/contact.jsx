@@ -1,6 +1,39 @@
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 
 
 function Contact(){
+
+    const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+    const [status, setStatus] = useState("");
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs
+        .send(
+            "service_nqx83si",    // from EmailJS
+            "template_vknc2fm",   // from EmailJS
+            {
+            name: formData.name,
+            email: formData.email,
+            message: formData.message,
+            to_email: "kareenayadav24@navgurukul.org", // your email
+            },
+            "aBr6EMyGJK0-XXm7l" // Public Key
+        )
+        .then(() => {
+            setFormData({ name: "", email: "", message: "" }); // clear fields
+            setStatus("✅ Message sent successfully!");
+        })
+        .catch(() => {
+            setStatus("❌ Something went wrong. Please try again.");
+          });
+
+    };    
 
     return(
         <section className="container my-5 py-5 justify-content-center" id="contact" data-aos="fade-up">
@@ -36,22 +69,22 @@ function Contact(){
                 <div className="col-md-5 mb-4 px-5">
                 <div className="card shadow-sm border-0 h-100">
                         <div className="card-body">
-                            <form action="get">
+                            <form action="get" onSubmit={sendEmail}>
                                 <div className="mb-3">
-                                    <label htmlFor="name" className="form-label">Name</label> 
-                                    <input type="text"  id="name" className="form-control"/>
+                                    <label htmlFor="name" className="form-label" >Name</label> 
+                                    <input type="text"  id="name" className="form-control" name="name" value={formData.name}  onChange={handleChange} required/>
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="email" className="form-label">Email</label> 
-                                    <input type="email"  id="email" className="form-control"/>
+                                    <input type="email"  id="email" className="form-control" name="email" value={formData.email}   onChange={handleChange} required/>
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="message" className="form-label">Message</label>
-                                    <textarea  id="message" className="form-control"></textarea>
+                                    <textarea  id="message" className="form-control" name="message" value={formData.message}         onChange={handleChange} required></textarea>
                                 </div>
 
                                 <button type="submit" className="btn btn-dark">Send Message</button>
-
+                                {status && <p className="mt-3 text-success">{status}</p>}
                             </form>
                         </div>
                     </div>

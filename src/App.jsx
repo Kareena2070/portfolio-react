@@ -8,6 +8,8 @@ import './component/skills.css'
   import ProjectSection from './component/project'
   import Experience from './component/experience'
   import Contact from './component/contact'
+
+  // import ContactForm from './component/emailjs'
  
 
 function App() {
@@ -23,6 +25,11 @@ function App() {
     <ProjectSection/>
     <Experience/>
     <Contact/>
+
+
+    {/*   Emailjs code */}
+
+      {/* <ContactForm/> */}
      
     </>
   )
