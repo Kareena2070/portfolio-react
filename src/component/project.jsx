@@ -20,14 +20,6 @@ function ProjectSection(){
           
         },
         {
-          title: "React Counter App",
-          description: "Interactive counter app demonstrating React state management with live text input updates.",
-          techStack: "React, Bootstrap, JavaScript",
-          image: counter,
-          github: "https://github.com/Kareena2070/min-React-task/tree/main/task-3(counter-app%26text-live)/react-file",
-          demo: "https://guileless-youtiao-6c07d1.netlify.app/"
-        },
-        {
           title: "React To-Do App",
           description: "A to-do list app with add, delete, and mark-as-done features using React state management.",
           techStack: "React, Bootstrap, JavaScript",
@@ -42,7 +34,7 @@ function ProjectSection(){
           techStack: "HTML, CSS, JavaScript, LocalStorage, Font Awesome",
           image: galleryHive,
           github: "https://github.com/Kareena2070/GalleryHive",
-          demo:"https://kareena2070.github.io/GalleryHive/"
+          demo: "https://kareena2070.github.io/GalleryHive/"
         },
         {
             title: "JavaScript Calculator",
@@ -55,7 +47,7 @@ function ProjectSection(){
 
         {
           title: "Interactive Love Quiz Web App",
-          description: "A playful multi-page web app where users navigate through a series of “Yes/No” questions to reveal a fun love message. Each page displays unique animations and prompts, creating an engaging interactive experience.",
+          description: "A playful multi-page web app where users navigate through a series of 'Yes/No' questions to reveal a fun love message. Each page displays unique animations and prompts, creating an engaging interactive experience.",
           techStack: "HTML, CSS, JavaScript, WebP images",
           image: loveQuiz,
           github: "https://github.com/Kareena2070/project-do-you-love-me-",
