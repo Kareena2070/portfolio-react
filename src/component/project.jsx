@@ -3,12 +3,22 @@ import worldCountriesData from '../assets/worldCountriesData.png'
 import calculator from '../assets/calculator.png'
 import galleryHive from '../assets/galleryHive.png'
 import todo from '../assets/todo-app.png'
-import counter from  '../assets/counter.png'
+import savorySpace from "../assets/savorySpace.png";
+
 import loveQuiz from '../assets/doYouLove.png'
 
 function ProjectSection(){
 
     const projects = [
+
+      {
+        title: "SavorySpace - Recipe App",
+        description: "A dynamic recipe management app where users can add, view, and save unique recipes. Features login/signup, API-based storage, and a responsive UI built using DOM manipulation.",
+        techStack: "HTML, CSS, JavaScript,React, SheetDB API",
+        image: savorySpace, 
+        github: "https://github.com/Kareena2070/SavorySpace-recipeApp.git", 
+        demo: "https://savoryspace.netlify.app/" 
+      },
 
         {
           title: "World Countries Data Visualization",
@@ -29,7 +39,7 @@ function ProjectSection(){
         }, 
 
         {
-          title: "GalleryHive – Interactive Image Gallery",
+          title: "GalleryHive - Interactive Image Gallery",
           description: "A dynamic web app for uploading, categorizing, and viewing images in a Pinterest-style gallery. Features include user authentication, search, category creation, and responsive Masonry layout for seamless browsing.",
           techStack: "HTML, CSS, JavaScript, LocalStorage, Font Awesome",
           image: galleryHive,
