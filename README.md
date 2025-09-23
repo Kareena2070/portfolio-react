@@ -4,11 +4,13 @@ This is a personal portfolio website built using React + Vite and styled with Bo
 
 🚀 Features
 
-    Responsive design (works on desktop & mobile)
+   -  Responsive design (works on desktop & mobile)
 
-    Sections: Home, About, Skills, Projects, Contact
+    - Sections: Home, About, Skills, Projects, Contact
 
-    Projects displayed with images and descriptions
+    - Projects displayed with images and descriptions
+    
+    - **Contact form powered by EmailJS** for sending messages directly to my email
 
 Smooth navigation
 
@@ -19,6 +21,8 @@ Smooth navigation
     Styling: Bootstrap, CSS
 
     Deployment: Vercel / Netlify
+
+    Email Integration: EmailJS (used in Contact form)
 
 
 📂 Folder Structure
