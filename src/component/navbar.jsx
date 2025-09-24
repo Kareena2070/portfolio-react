@@ -1,4 +1,6 @@
 // import HeroSection from "./hero";
+// import 
+import profile from '../assets/kareena.png'
 
 function Navbar(){
     return(
@@ -6,7 +8,8 @@ function Navbar(){
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-2 fs-4">
             <div className="container ">
                 <div className="navbar-brand fs-1">
-                    K.Y
+                    <img src={profile} alt="" className="img-fluid rounded-circle " style={{ height: "80px", width: "80px" }}/>
+                    {/* <span className="fw-bold">Kareena Yadav</span> */}
                 </div>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span className="navbar-toggler-icon"></span>
