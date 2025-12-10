@@ -4,6 +4,7 @@ import calculator from '../assets/calculator.png'
 import galleryHive from '../assets/galleryHive.png'
 import todo from '../assets/todo-app.png'
 import savorySpace from "../assets/savorySpace.png";
+import lazarev from '../assets/lazarev.png'
 
 import loveQuiz from '../assets/doYouLove.png'
 
@@ -19,6 +20,15 @@ function ProjectSection(){
         github: "https://github.com/Kareena2070/SavorySpace-recipeApp.git", 
         demo: "https://savoryspace.netlify.app/" 
       },
+
+       {
+            title: "Lazarev",
+            description: "Implemented interactive animations with vanilla JS and GSAP (hover nav, marquee carousel). Improved UX with accessible details toggles, hover-follow parallax images, and progressive reveals. Added multimedia interactions: clickable showreel and hover-autoplay portfolio videos.",
+            techStack: "HTML, CSS, JavaScript (DOM)",
+            image: lazarev,
+            github: "https://github.com/Kareena2070/HTML-CSS-min-projec/tree/main/calculator",
+            demo: "https://lazarev-k.netlify.app"
+        },
 
         {
           title: "World Countries Data Visualization",
@@ -46,14 +56,7 @@ function ProjectSection(){
           github: "https://github.com/Kareena2070/GalleryHive",
           demo: "https://kareena2070.github.io/GalleryHive/"
         },
-        {
-            title: "JavaScript Calculator",
-            description: "A basic calculator built with pure JavaScript and DOM manipulation. Supports arithmetic operations and dynamic UI creation with styled buttons.",
-            techStack: "HTML, CSS, JavaScript (DOM)",
-            image: calculator,
-            github: "https://github.com/Kareena2070/HTML-CSS-min-projec/tree/main/calculator",
-            demo: "https://funny-praline-1c147d.netlify.app/"
-        },
+       
 
         {
           title: "Interactive Love Quiz Web App",
