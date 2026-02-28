@@ -1,5 +1,4 @@
 
-import './App.css'
 import './component/skills.css'
   import profile from './assets/profile.jpeg'
   import Navbar from './component/navbar'

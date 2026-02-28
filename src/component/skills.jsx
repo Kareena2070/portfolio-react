@@ -1,76 +1,42 @@
-
-
-
-// function SkillSection(){
-
-    
-
-//     return(
-//         <div className='skills' id="skills">
-//             <div className='skill-heading'>
-//             <h1>Skills & Technologies </h1>
-//             </div>
-//             <div className='skill-item'>
-//                 <div className='item-heading'>Frontend</div>
-//                 <div className='button'>
-//                     <button>HTML5</button>
-//                     <button>CSS3</button>
-//                     <button>JavaScript</button>
-//                     <button>Bootstrap</button>
-//                     <button>React</button>
-//                 </div>
-//             </div>
-//             <div className='skill-item'>
-//                 <div className='item-heading'>Backend</div>
-//                 <div className='button'>
-//                 <button>Python</button>
-//                 <button>PostgreSQL</button>
-//                 </div>
-//             </div>
-//             <div className='skill-item'>
-//                 <div className='item-heading'>Tools & Others</div>
-//                 <div className='button'>
-//                     <button>Git</button>
-//                     <button>GitHub</button>
-//                     <button>VS Code</button>
-//                     <button>Canvas</button>
-//                 </div>
-//             </div>
-
-//         </div>
-
-        
-//     );
-// }
-
-// export default SkillSection
-
 function SkillSection() {
-    const skills = {
-      Frontend: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "React"],
-      Backend: ["Python", "PostgreSQL"],
-      "Tools & Others": ["Git", "GitHub", "VS Code", "Canvas"],
-    };
+  const skills = {
+    Frontend: ["HTML5", "CSS3", "JavaScript", "React", 'Next.js', 'TypeScript', 'Tailwind'],
+    // Backend: [],
+    "Tools & Others": ["Git", "GitHub", "VS Code", "Canvas"],
+  };
 
-  
-    return (
-      <div className="skills" id="skills">
-        <div className="skill-heading">
-          <h1>Skills & Technologies</h1>
-        </div>
-        {Object.entries(skills).map(([category, items]) => (
-          <div className="skill-item" key={category}>
-            <div className="item-heading">{category}</div>
-            <div className="button">
-              {items.map((item) => (
-                <button key={item}>{item}</button>
-              ))}
+  return (
+    <section id="skills" className="py-5 bg-light">
+      <div className="container">
+        <h1 className="text-center mb-5 fw-bold">Skills & Technologies</h1>
+
+        <div className="row g-4">
+          {Object.entries(skills).map(([category, items]) => (
+            <div className="col-md-6" key={category}>
+              <div className="card border-0 shadow-sm h-100 skill-card-clean">
+                <div className="card-body">
+                  <h5 className="card-title text-warning fw-semibold mb-4 text-black fs-2">
+                    {category}
+                  </h5>
+
+                  <div className="d-flex flex-wrap gap-3">
+                    {items.map((item) => (
+                      <span
+                        key={item}
+                        className="badge bg-white text-dark border border-warning px-3 py-3 skill-badge-clean fs-6"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    );
-  }
-  
-  export default SkillSection;
-  
+    </section>
+  );
+}
+
+export default SkillSection;
