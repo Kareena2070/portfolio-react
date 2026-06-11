@@ -1,41 +1,88 @@
-import styles from "./hero.module.css";
-
-function HeroSection(profile) {
+function HeroSection({ img }) {
   return (
-    <div
-      className={`container-fluid py-5 px-10 container ${styles.container}`}
-      id="about"
-      data-aos="fade-up"
-    >
-      <div className={styles.box1}>
-        <h1>Kareena Yadav</h1>
-        <h4>Frontend Developer</h4>
+    <section id="about" className="min-h-[70vh] flex items-center bg-slate-50">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Side */}
+          <div>
+            <p className="text-blue-600 font-semibold mb-3">Hello, I'm</p>
+
+            <h1 className="text-6xl md:text-7xl fw-bold text-slate-900 leading-tight">
+              Kareena Yadav
+            </h1>
+
+            <h2 className="text-xl font-semibold text-slate-700 mt-4">
+              Frontend Developer | Building Fast, Modern & SEO-Friendly Web
+              Applications
+            </h2>
+
+            <p className="text-lg text-slate-600 mt-6 leading-relaxed max-w-xl">
+              I build modern, responsive, and SEO-friendly web applications
+              using React, Next.js, JavaScript, and TypeScript. I enjoy turning
+              ideas into real products with clean UI, API integrations, and
+              performance-focused development.
+            </p>
+
+            {/* Buttons */}
+
+            <div className="flex flex-wrap gap-4 mt-8">
+              <a
+                href="#contact"
+                className="bg-black text-white px-6 py-3 rounded-xl font-medium hover:scale-105 transition"
+              >
+                Hire Me
+              </a>
+
+              <a
+                href="#projects"
+                className="border border-black px-6 py-3 rounded-xl font-medium hover:bg-gray-300 hover:text-white transition"
+              >
+                View Projects
+              </a>
+            </div>
+
+            {/* Highlights */}
+
+            <div className="flex flex-wrap gap-3 mt-8">
+              <span className="px-4 py-2 bg-white rounded-full shadow text-sm">
+                React
+              </span>
+
+              <span className="px-4 py-2 bg-white rounded-full shadow text-sm">
+                Next.js
+              </span>
+
+              <span className="px-4 py-2 bg-white rounded-full shadow text-sm">
+                TypeScript
+              </span>
+
+              <span className="px-4 py-2 bg-white rounded-full shadow text-sm">
+                Tailwind CSS
+              </span>
+
+              <span className="px-4 py-2 bg-white rounded-full shadow text-sm">
+                API Integration
+              </span>
+            </div>
+          </div>
+
+          {/* Right Side */}
+
+          <div className="flex justify-center">
+            <div className="relative">
+              <div className="absolute inset-0 bg-blue-500 blur-3xl opacity-20 rounded-full"></div>
+
+              <img
+                src={img}
+                alt="Kareena Yadav"
+                className="relative w-[280px] md:w-[360px] rounded-3xl shadow-2xl object-cover"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-      <div className={styles.box2}>
-        <p>
-          Front-end developer with hands-on experience in React, JavaScript,
-          HTML, CSS, Tailwind, Next.js, and TypeScript. Built and deployed
-          multiple projects including interactive dashboards and full-featured
-          web apps on Netlify and Vercel. Strong in API integration, responsive
-          UI design, component-based architecture, and version control
-          (Git/GitHub).Strong in API integration, responsive UI design, and
-          version control (Git/GitHub) with ongoing practice in DSA using Python
-          to sharpen problem-solving skills.
-        </p>
-        <a
-          className="btn btn-dark"
-          href="resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {" "}
-          Check My Resume
-        </a>
-      </div>
-      <div className={styles.box3}>
-        <img src={profile.img} alt="Kareena" className={styles.imgStyle} />
-      </div>
-    </div>
+    </section>
   );
 }
+
 export default HeroSection;
